@@ -12,9 +12,16 @@
 		8E1A406C20AE408100C8FB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A406A20AE408100C8FB01 /* Main.storyboard */; };
 		8E1A406E20AE408100C8FB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A406D20AE408100C8FB01 /* Assets.xcassets */; };
 		8E1A407120AE408100C8FB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1A406F20AE408100C8FB01 /* LaunchScreen.storyboard */; };
+		8E95F53020AE4DDC00F0EE0A /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F52F20AE4DDC00F0EE0A /* ATM.swift */; };
+		8E95F53220AE57F000F0EE0A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F53120AE57F000F0EE0A /* Location.swift */; };
+		8E95F53420AE5A1B00F0EE0A /* ATMMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95F53320AE5A1B00F0EE0A /* ATMMarker.swift */; };
+		AAF74157006ED8BBF88E0B5A /* Pods_Trabajo_Entregable_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2359B03315789BD43FB68516 /* Pods_Trabajo_Entregable_1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		226BEE92D692B0D34E748493 /* Pods-Trabajo Entregable 1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trabajo Entregable 1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trabajo Entregable 1/Pods-Trabajo Entregable 1.debug.xcconfig"; sourceTree = "<group>"; };
+		2359B03315789BD43FB68516 /* Pods_Trabajo_Entregable_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trabajo_Entregable_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36CE356253D5103CE2DDF520 /* Pods-Trabajo Entregable 1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trabajo Entregable 1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trabajo Entregable 1/Pods-Trabajo Entregable 1.release.xcconfig"; sourceTree = "<group>"; };
 		8E1A406320AE408100C8FB01 /* Trabajo Entregable 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trabajo Entregable 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1A406620AE408100C8FB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E1A406820AE408100C8FB01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		8E1A406D20AE408100C8FB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E1A407020AE408100C8FB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E1A407220AE408100C8FB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E95F52F20AE4DDC00F0EE0A /* ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
+		8E95F53120AE57F000F0EE0A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		8E95F53320AE5A1B00F0EE0A /* ATMMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMMarker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF74157006ED8BBF88E0B5A /* Pods_Trabajo_Entregable_1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4DAAA2084F78A1BBF20EFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				226BEE92D692B0D34E748493 /* Pods-Trabajo Entregable 1.debug.xcconfig */,
+				36CE356253D5103CE2DDF520 /* Pods-Trabajo Entregable 1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8E1A405A20AE408100C8FB01 = {
 			isa = PBXGroup;
 			children = (
 				8E1A406520AE408100C8FB01 /* Trabajo Entregable 1 */,
 				8E1A406420AE408100C8FB01 /* Products */,
+				0D4DAAA2084F78A1BBF20EFE /* Pods */,
+				F39133E4B18C58A508957C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +76,7 @@
 		8E1A406520AE408100C8FB01 /* Trabajo Entregable 1 */ = {
 			isa = PBXGroup;
 			children = (
+				8E95F52E20AE4DC500F0EE0A /* Models */,
 				8E1A406620AE408100C8FB01 /* AppDelegate.swift */,
 				8E1A406820AE408100C8FB01 /* ViewController.swift */,
 				8E1A406A20AE408100C8FB01 /* Main.storyboard */,
@@ -64,6 +87,24 @@
 			path = "Trabajo Entregable 1";
 			sourceTree = "<group>";
 		};
+		8E95F52E20AE4DC500F0EE0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E95F52F20AE4DDC00F0EE0A /* ATM.swift */,
+				8E95F53120AE57F000F0EE0A /* Location.swift */,
+				8E95F53320AE5A1B00F0EE0A /* ATMMarker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F39133E4B18C58A508957C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2359B03315789BD43FB68516 /* Pods_Trabajo_Entregable_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1A407520AE408100C8FB01 /* Build configuration list for PBXNativeTarget "Trabajo Entregable 1" */;
 			buildPhases = (
+				F2ECE96626F8F14668E72A5D /* [CP] Check Pods Manifest.lock */,
 				8E1A405F20AE408100C8FB01 /* Sources */,
 				8E1A406020AE408100C8FB01 /* Frameworks */,
 				8E1A406120AE408100C8FB01 /* Resources */,
+				AE19BCF164A42E7BA5208AF2 /* [CP] Embed Pods Frameworks */,
+				47275D4506744E8E489F2B85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +175,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47275D4506744E8E489F2B85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trabajo Entregable 1/Pods-Trabajo Entregable 1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE19BCF164A42E7BA5208AF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Trabajo Entregable 1/Pods-Trabajo Entregable 1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trabajo Entregable 1/Pods-Trabajo Entregable 1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2ECE96626F8F14668E72A5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trabajo Entregable 1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E1A405F20AE408100C8FB01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E95F53020AE4DDC00F0EE0A /* ATM.swift in Sources */,
+				8E95F53420AE5A1B00F0EE0A /* ATMMarker.swift in Sources */,
 				8E1A406920AE408100C8FB01 /* ViewController.swift in Sources */,
+				8E95F53220AE57F000F0EE0A /* Location.swift in Sources */,
 				8E1A406720AE408100C8FB01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +377,7 @@
 		};
 		8E1A407620AE408100C8FB01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 226BEE92D692B0D34E748493 /* Pods-Trabajo Entregable 1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +392,7 @@
 		};
 		8E1A407720AE408100C8FB01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36CE356253D5103CE2DDF520 /* Pods-Trabajo Entregable 1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
