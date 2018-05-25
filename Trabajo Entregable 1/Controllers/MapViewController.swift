@@ -26,15 +26,9 @@ class MapViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination  = segue.destination as? ATMViewController, let annotationView = sender as? MKAnnotationView {
-            let annotation  = annotationView.annotation as? ATMMarker
-            destination.atm = annotation?.atm
-        }
-    }
-    
+  
     func requestATMData(){
+        activityIndicator.startAnimating()
         NetworkApi.getAtms(callback: addAnnotations)
     }
     
@@ -64,6 +58,14 @@ class MapViewController: UIViewController{
             }))
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination  = segue.destination as? ATMViewController, let annotationView = sender as? MKAnnotationView {
+            let annotation  = annotationView.annotation as? ATMMarker
+            destination.atm = annotation?.atm
+        }
+    }
+    
 }
 extension MapViewController : MKMapViewDelegate{
     
@@ -81,7 +83,7 @@ extension MapViewController : MKMapViewDelegate{
             view.canShowCallout = true
             view.calloutOffset  = CGPoint(x: -5, y: 5)
             let btn             = UIButton(type: .custom)
-            let networkImage    = annotation.atm.getImage()
+            let networkImage    = annotation.atm.getImageLogo()
             btn.setImage(networkImage, for: .normal)
             btn.sizeToFit()
             view.rightCalloutAccessoryView = btn

@@ -49,7 +49,8 @@ class ATM: Mappable{
     
 }
 extension ATM{
-    func getImage() ->UIImage{
+    
+    func getImageLogo() ->UIImage{
         guard let network = network else {return #imageLiteral(resourceName: "redBrouLogo")}
         switch network {
         case .banred:

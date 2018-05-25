@@ -21,7 +21,6 @@ class ATMViewController: UIViewController {
     @IBOutlet weak var detailsView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
     @IBOutlet weak var gradientView: UIView!
     var atm : ATM!
     
@@ -33,10 +32,14 @@ class ATMViewController: UIViewController {
         timeLabel.text       = atm.openHours
         hasMoneyLabel.text   = atm.getMoneyString()
         hasDepositLabel.text = atm.getDepositString()
-        networkImage.image   = atm.getImage()
+        networkImage.image   = atm.getImageLogo()
         requestImage()
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     func displayDetails(image: UIImage?){
         if let image = image{
             backgroundImage.image      = image
@@ -60,15 +63,12 @@ class ATMViewController: UIViewController {
     }
     
     func requestImage(){
+        activityIndicator.startAnimating()
         NetworkApi.getAtmImage(callback : displayDetails, imageUrl: atm.imageUrl!)
     }
     @IBAction func closeViewControler(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
