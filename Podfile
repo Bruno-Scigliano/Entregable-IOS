@@ -10,4 +10,5 @@ target 'Trabajo Entregable 1' do
   # Pods for Trabajo Entregable 1
   pod "Alamofire"
   pod "AlamofireObjectMapper"
+  pod "AlamofireImage"
 end

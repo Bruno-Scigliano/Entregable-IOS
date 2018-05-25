@@ -6,12 +6,11 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "redBrouLogo.png",
+      "filename" : "BanredLogo.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "redBrouLogo-1.png",
       "scale" : "3x"
     }
   ],

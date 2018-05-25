@@ -14,7 +14,7 @@ class ATMMarker: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     
     init(atm: ATM, coordinate: CLLocationCoordinate2D) {
-        self.title        = atm.network
+        self.title        = atm.network?.rawValue
         self.atm          = atm
         self.coordinate   = coordinate
         super.init()
